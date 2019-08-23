@@ -1,9 +1,9 @@
-from lib.crypt import key2shifts, encode, decode
+from .crypt import key2shifts, encode, decode 
 import argparse
 import os
 import sys
 
-if __name__ == "__main__":
+def main():
     # Load args
     parser = argparse.ArgumentParser(description="Keyed text encoding")
     parser.add_argument("file", help="Input file")
@@ -31,3 +31,6 @@ if __name__ == "__main__":
 
     # Print out the output for piping
     print(output)
+
+if __name__ == "__main__":
+    main()
