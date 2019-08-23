@@ -1,0 +1,2 @@
+# shift
+Keyed text encoding
