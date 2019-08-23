@@ -13,7 +13,7 @@ To install this tool and library, use PIP:
 pip3 install shift-tool
 
 # Run shift
-shift2
+shift2 -h
 ```
 
 NOTE: the executable is named `shift2` not `shift`.
