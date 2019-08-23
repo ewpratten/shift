@@ -59,6 +59,11 @@ Encoding:  0.089 seconds
 Deconding: 0.101 seconds
 ```
 
+## Querks
+The first interesting thing about shift, is that the key can be randomly modified during encoding. This means that the message and key could actually encode eachother (this was done in my first implementation but produced files >1GB from the word "hello")
+
+Binary data must be b64 encoded before being passed through the encoder due to python safety checking unicode data.
+
 ## Development
 ### Deploying to PIP
 To deploy shift to PIP, use:

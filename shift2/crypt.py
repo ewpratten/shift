@@ -33,7 +33,7 @@ def encode(file, key):
         output += chr(ord(byte) + key[i%len(key) - 1])
 
         # Mod the key
-        key.append((i%key[0]))
+        key.append(i%key[0])
 
     # Final encoding
     output = base64.b64encode(output.encode())
