@@ -14,13 +14,37 @@ shift2
 NOTE: the executable is named `shift2` not `shift`.
 
 ## Usage
-Shift has two modes:
+
+### Commandline
+Shift's commandline tool has two modes:
 ```sh
 # Encode
 shift2 /path/to/input/file your_key_here > output.shift
 
 # Decode
 shift2 -d /path/to/encoded/file your_key_here > output.txt
+```
+
+### Library
+You can also integrate shift2 into your own program with the library that is automatically installed with the commandline tool.
+
+```python
+import shift2.crypt as s2c
+
+# Inputs
+my_key = "hello_shift"
+my_message = "I'm shifty"
+
+# Generate shifted key
+key = s2c.key2shifts(my_key)
+
+# Encode the message
+data = s2c.encode(my_message, key)
+
+# Print out the encoded message
+print(data)
+
+# To decode, just use s2c.decode instead of s2c.encode
 ```
 
 ## Speed
