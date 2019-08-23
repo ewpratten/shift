@@ -1,5 +1,10 @@
 # shift
-Keyed text encoding
+Not an encryption tool
+
+Shift was designed to store non-critical text data in such a way that only keyholders could reconstruct a useful message. Following the cryptography community's rule of "Never roll your own encryption", I am specifically not calling this an encryption tool. 
+I have found that through some basic testing, with a reasonable key, breaking this encoding is not easy for the average teenage 1337 haxxor, but I cannot say anything for it's durability against an experienced code breaker. If you find a way to break this, open up an issue, or contact me via email (any pull requests that can strengthen the tool are welcome too).
+
+This tool is still under development, and may not be backwards compatible with itself in the near future. 
 
 ## Installation
 To install this tool and library, use PIP:
