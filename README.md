@@ -1,4 +1,4 @@
-# shift
+# shift ![Tests](https://github.com/ewpratten/shift/workflows/Python%20package/badge.svg) ![Installation](https://github.com/ewpratten/shift/workflows/PIP%20Installation/badge.svg)
 Not an encryption tool
 
 Shift was designed to store non-critical text data in such a way that only keyholders could reconstruct a useful message. Following the cryptography community's rule of "Never roll your own encryption", I am specifically not calling this an encryption tool. 
