@@ -34,7 +34,7 @@ shift2 -d /path/to/encoded/file your_key_here > output.txt
 You can also integrate shift2 into your own program with the library that is automatically installed with the commandline tool.
 
 ```python
-import shift2.crypt as s2c
+import shift2.shcrypt as s2c
 
 # Inputs
 my_key = "hello_shift"

@@ -1,4 +1,4 @@
-from .crypt import key2shifts, encode, decode 
+import shcrypt
 import argparse
 import os
 import sys
@@ -12,7 +12,7 @@ def main():
     args = parser.parse_args()
     
     # Convert the key to something easier to work with
-    shifts = key2shifts(args.key)
+    shifts = shcrypt.key2shifts(args.key)
 
     # Load the file, and convert to b64
     if not os.path.exists(args.file):
@@ -25,9 +25,9 @@ def main():
 
     # Pass file through correct modifier
     if not args.decode:
-        output = encode(file, shifts)
+        output = shcrypt.encode(file, shifts)
     else:
-        output = decode(file, shifts)
+        output = shcrypt.decode(file, shifts)
 
     # Print out the output for piping
     print(output)
