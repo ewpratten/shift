@@ -20,7 +20,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-    - name: Test with pytest
+    - name: Install from pip
       run: |
         pip install shift-tool
         shift2 -h

@@ -1,7 +1,7 @@
 import base64
 import hashlib
 
-import layers
+import .layers
 
 def sumstr(x: str) -> int:
     output = 0
