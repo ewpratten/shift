@@ -15,9 +15,9 @@ def key2shifts(key: str) -> list:
     output = []
 
     # Check if key should get hashed
-    if sumstr(key) % 2 == 1:
-        key = str(hashlib.sha256(key.encode()).hexdigest())
-        #print(key)
+    # if sumstr(key) % 2 == 1:
+    #     key = str(hashlib.sha256(key.encode()).hexdigest())
+    #     #print(key)
 
     for char in key:
         output.append(ord(char))
