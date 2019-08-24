@@ -1,4 +1,4 @@
-import shcrypt
+from . import shcrypt
 import argparse
 import os
 import sys

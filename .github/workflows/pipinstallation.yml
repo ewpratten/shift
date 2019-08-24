@@ -23,4 +23,6 @@ jobs:
     - name: Install from pip
       run: |
         pip install shift-tool
+    - name : Test installation
+      run: |
         shift2 -h

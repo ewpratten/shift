@@ -76,3 +76,13 @@ pip3 uninstall shift-tool
 ./deploy.sh
 pip3 install --no-cache-dir shift-tool
 ```
+
+## Running locally
+This script must be run with:
+```sh
+python3 -m shift2
+```
+NOT
+```sh
+python3 shift2
+```
