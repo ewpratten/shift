@@ -1,4 +1,4 @@
-from .crypt import key2shifts, encode, decode 
+from crypt import key2shifts, encode, decode 
 import argparse
 import os
 import sys

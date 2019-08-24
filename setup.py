@@ -5,9 +5,9 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='shift-tool',
-    version='2.0',
+    version='3.0.0',
     packages=setuptools.find_packages(),
-    description='Keyed text encoding',
+    description='Not an encryption tool',
     url='https://github.com/Ewpratten/shift',
     author='Evan Pratten',
     author_email='ewpratten@gmail.com',
